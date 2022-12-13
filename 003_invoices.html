@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>請求書・請求明細書作成</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+  <header class="p-3 text-white" style="background-color: mediumvioletred;">
+    <div class="container-fluid">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 text-white">ホーム</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">見積</a></li>
+        </ul>
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-2">account</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="" style="background-color: lavenderblush;">
+    <h3 class="p-3 bg-white">請求書・請求明細書作成</h3>
+    <div class="container-fluid" style="">
+      <div class="p-3 bg-white rounded">
+        <div class="container" style="">
+          <form>
+            <table class="table table-bordered">
+              <tr>
+                <th class="col-md-2">部門</th>
+                <td class="col-md-2">4023</td>
+                <td class="col-md-4">ソリューション事業本部</td>
+                <td class="col-md-4">関東支店</td>
+              </tr>
+              <tr>
+                <th class="col-md-2">担当者</th>
+                <td class="col-md-2">002021</td>
+                <td colspan="2">ヤマダタロウ</td>
+              </tr>
+            </table>
+            <hr class="my-4">
+            <table class="table table-striped table-bordered">
+              <thead>
+                <th class="text-center">請求形式</th>
+                <th class="text-center">請求回数</th>
+                <th class="text-center">注番設定</th>
+                <th class="text-center">
+                  受注注番<br>
+                  枝番設定
+                </th>
+                <th class="text-center">請求日(発行日)</th>
+                <th class="text-center">売上月</th>
+                <th class="text-center">
+                  決定金額・請求金額<br>
+                  (参考値)
+                </th>
+                <th class="text-center text-danger">請求金額(入力)</th>
+                <th class="text-center">請求書記載事項</th>
+                <th class="text-center text-danger bg-warning">
+                  受注伝票<br>
+                  請求書<br>
+                  出力選択
+                </th>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="text-center">一括請求</th>
+                  <th class="text-center">1回</th>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="text-center">
+                    <div class="form-check d-flex justify-content-center">
+                      <input class="form-check-input" type="radio" name="bank" id="" disabled>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="text-center" rowspan="3">一括請求</th>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="bg-secondary" rowspan="3">&nbsp;</td>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="text-center">
+                    <div class="form-check d-flex justify-content-center">
+                      <input class="form-check-input" type="radio" name="bank" id="" disabled>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="">
+                    <div class="form-check d-flex justify-content-center">
+                      <input class="form-check-input" type="radio" name="bank" id="" disabled>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="bg-secondary">&nbsp;</td>
+                  <td class="text-center">
+                    <div class="form-check d-flex justify-content-center">
+                      <input class="form-check-input" type="radio" name="bank" id="" disabled>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="text-center" rowspan="4">分割請求</th>
+                  <td class="text-center">1回目請求</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">135,000</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">
+                    <input type="" class="form-control w-100" id="">
+                  </td>
+                  <td class="text-center">
+                    <div class="form-check d-flex justify-content-center">
+                      <input class="form-check-input" type="radio" name="bank" id="">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">2回目請求</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">144,000</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">
+                    <input type="" class="form-control w-100" id="">
+                  </td>
+                  <td class="text-center">
+                    <div class="form-check d-flex justify-content-center">
+                      <input class="form-check-input" type="radio" name="bank" id="">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">3回目請求</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">144,000</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">
+                    <input type="" class="form-control w-100" id="">
+                  </td>
+                  <td class="text-center">
+                    <div class="form-check d-flex justify-content-center">
+                      <input class="form-check-input" type="radio" name="bank" id="">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">4回目請求</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">144,000</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">
+                    <input type="" class="form-control w-100" id="">
+                  </td>
+                  <td class="text-center">
+                    <div class="form-check d-flex justify-content-center">
+                      <input class="form-check-input" type="radio" name="bank" id="">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="text-center" rowspan="2">
+                    回数<br>
+                    12回
+                  </th>
+                  <td class="text-center">5回目請求</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">144,000</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">
+                    <input type="" class="form-control w-100" id="">
+                  </td>
+                  <td class="text-center">
+                    <div class="form-check d-flex justify-content-center">
+                      <input class="form-check-input" type="radio" name="bank" id="">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">6回目請求</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">144,000</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">
+                    <input type="" class="form-control w-100" id="">
+                  </td>
+                  <td class="text-center">
+                    <div class="form-check d-flex justify-content-center">
+                      <input class="form-check-input" type="radio" name="bank" id="">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="text-center" rowspan="6">分割請求</th>
+                  <td class="text-center">7回目請求</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">144,000</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">
+                    <input type="" class="form-control w-100" id="">
+                  </td>
+                  <td class="text-center">
+                    <div class="form-check d-flex justify-content-center">
+                      <input class="form-check-input" type="radio" name="bank" id="">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">8回目請求</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">144,000</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">
+                    <input type="" class="form-control w-100" id="">
+                  </td>
+                  <td class="text-center">
+                    <div class="form-check d-flex justify-content-center">
+                      <input class="form-check-input" type="radio" name="bank" id="">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">9回目請求</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">144,000</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">
+                    <input type="" class="form-control w-100" id="">
+                  </td>
+                  <td class="text-center">
+                    <div class="form-check d-flex justify-content-center">
+                      <input class="form-check-input" type="radio" name="bank" id="">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">10回目請求</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">144,000</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">
+                    <input type="" class="form-control w-100" id="">
+                  </td>
+                  <td class="text-center">
+                    <div class="form-check d-flex justify-content-center">
+                      <input class="form-check-input" type="radio" name="bank" id="">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">11回目請求</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">144,000</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">
+                    <input type="" class="form-control w-100" id="">
+                  </td>
+                  <td class="text-center">
+                    <div class="form-check d-flex justify-content-center">
+                      <input class="form-check-input" type="radio" name="bank" id="">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">12回目請求</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">144,000</td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">
+                    <input type="" class="form-control w-100" id="">
+                  </td>
+                  <td class="text-center">
+                    <div class="form-check d-flex justify-content-center">
+                      <input class="form-check-input" type="radio" name="bank" id="">
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <ul class="list-inline">
+              <li class="list-inline-item"><button class="btn btn-primary text-white">注文書印刷</button></li>
+              <li class="list-inline-item"><button class="btn btn-primary text-white">納品書印刷</button></li>
+              <li class="list-inline-item"><button class="btn btn-primary text-white">請求明細印刷</button></li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
