@@ -29,109 +29,115 @@
     <h3 class="p-3 bg-white">受注検索</h3>
     <div class="container-fluid">
       <div class="p-3 bg-white rounded">
-        <form>
-          <div class="row mb-3">
-            <div class="col-sm-6">
+        <div class="container">
+          <form>
+            <div class="row mb-3">
               <div class="row">
-                <label for="deptNo" class="col-sm-4 col-form-label">部門番号</label>
+                <div class="col-sm-4">
+                  <div class="row">
+                    <label for="deptNo" class="col-sm-2 col-form-label fw-bold" style="width: 10rem;">部門番号</label>
+                    <div class="col-sm-2">
+                      <input type="email" class="form-control" id="deptNo" style="width: 8rem;">
+                    </div>
+                  </div>
+                </div>
                 <div class="col-sm-8">
-                  <input type="email" class="form-control w-50" id="deptNo">
+                  <div class="row">
+                    <label for="deptName" class="col-sm-2 col-form-label fw-bold" style="width: 10rem;">部門名</label>
+                    <div class="col-sm-6">
+                      <input type="email" class="form-control" id="deptName" style="width: 50%;">
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6">
-              <div class="row">
-                <label for="deptName" class="col-sm-4 col-form-label">部門名</label>
-                <div class="col-sm-8">
-                  <input type="email" class="form-control w-50" id="deptName">
-                </div>
+            <div class="row mb-3">
+              <label for="quoteNo" class="col-sm-2 col-form-label fw-bold" style="width: 10rem;">見積番号</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control w-25" id="quoteNo">
               </div>
             </div>
-          </div>
-          <div class="row mb-3">
-            <label for="quoteNo" class="col-sm-2 col-form-label">見積番号</label>
-            <div class="col-sm-10">
-              <input type="email" class="form-control w-50" id="quoteNo">
+            <div class="row mb-3">
+              <label for="customerNm" class="col-sm-2 col-form-label fw-bold" style="width: 10rem;">取引先名</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control w-50" id="customerNm">
+              </div>
             </div>
-          </div>
-          <div class="row mb-3">
-            <label for="customerNm" class="col-sm-2 col-form-label">取引先名</label>
-            <div class="col-sm-10">
-              <input type="email" class="form-control w-50" id="customerNm">
+            <div class="row mb-3">
+              <label for="recipient" class="col-sm-2 col-form-label fw-bold" style="width: 10rem;">納入先</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control w-50" id="recipient">
+              </div>
             </div>
-          </div>
-          <div class="row mb-3">
-            <label for="recipient" class="col-sm-2 col-form-label">納入先</label>
-            <div class="col-sm-10">
-              <input type="email" class="form-control w-50" id="recipient">
+            <div class="row mb-3">
+              <label for="orderAmountFr" class="col-sm-2 col-form-label fw-bold" style="width: 10rem;">受注金額</label>
+              <div class="col-sm-10 d-flex align-items-center">
+                <input type="number" class="form-control text-end" id="orderAmountFr" style="width: 15%">&nbsp;～&nbsp;
+                <input type="number" class="form-control text-end" id="orderAmountTo" style="width: 15%">
+              </div>
             </div>
-          </div>
-          <div class="row mb-3">
-            <label for="orderAmountFr" class="col-sm-2 col-form-label">受注金額</label>
-            <div class="col-sm-10 d-flex">
-              <input type="number" class="form-control text-end w-25" id="orderAmountFr">&nbsp;～&nbsp;
-              <input type="number" class="form-control text-end w-25" id="orderAmountTo">
+            <div class="row mb-3">
+              <label for="profitRatioFr" class="col-sm-2 col-form-label fw-bold" style="width: 10rem;">利益率</label>
+              <div class="col-sm-10 d-flex align-items-center">
+                <input type="number" class="form-control text-end" id="profitRatioFr" style="width: 15%">&nbsp;%&nbsp;～&nbsp;
+                <input type="number" class="form-control text-end" id="profitRatioTo" style="width: 15%">&nbsp;%
+              </div>
             </div>
-          </div>
-          <div class="row mb-3">
-            <label for="profitRatioFr" class="col-sm-2 col-form-label">利益率</label>
-            <div class="col-sm-10 d-flex">
-              <input type="number" class="form-control text-end w-25" id="profitRatioFr">%&nbsp;～&nbsp;
-              <input type="number" class="form-control text-end w-25" id="profitRatioTo">%
+            <div class="row mb-3">
+              <label for="fiscalYear" class="col-sm-2 col-form-label fw-bold" style="width: 10rem;">年度</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="fiscalYear" style="width: 10%">
+              </div>
             </div>
-          </div>
-          <div class="row mb-3">
-            <label for="fiscalYear" class="col-sm-2 col-form-label">年度</label>
-            <div class="col-sm-10">
-              <input type="email" class="form-control" id="fiscalYear" style="width: 10%">
+            <div class="row mb-3">
+              <label for="pic" class="col-sm-2 col-form-label fw-bold" style="width: 10rem;">担当者</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control w-50" id="pic">
+              </div>
             </div>
-          </div>
-          <div class="row mb-3">
-            <label for="pic" class="col-sm-2 col-form-label">担当者</label>
-            <div class="col-sm-10">
-              <input type="email" class="form-control w-50" id="pic">
-            </div>
-          </div>
-          <button class="btn btn-large text-white" style="background-color: mediumvioletred;">検索</button>
-        </form>
-        <hr class="my-4">
-        <table class="table table-striped table-bordered">
-          <thead>
-            <th class="text-center">No.</th>
-            <th class="text-center">見積番号</th>
-            <th class="text-center">受注番号</th>
-            <th class="text-center">
-              提出先<br>
-              契約先名/取引先名
-            </th>
-            <th class="text-center">
-              ご使用先名<br>
-              納品先名/最終需要
-            </th>
-            <th class="text-center">件名</th>
-            <th class="text-center">担当者</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>4023-21-0001-00</td>
-              <td>012345678901-012345678901-001</td>
-              <td>株式会社サンプル</td>
-              <td>(株)サンプル　東京工場</td>
-              <td>(株)サンプル　東京工場</td>
-              <td>&nbsp;</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>4023-21-0001-00</td>
-              <td>012345678901-012345678901-001</td>
-              <td>株式会社サンプル</td>
-              <td>(株)サンプル　東京工場</td>
-              <td>(株)サンプル　東京工場</td>
-              <td>&nbsp;</td>
-            </tr>
-          </tbody>
-        </table>
+            <button class="btn btn-large text-white" style="background-color: mediumvioletred;">検索</button>
+          </form>
+          <hr class="my-4">
+          <table class="table border-top border-start border-end">
+            <thead class="table-light">
+              <th class="">No.</th>
+              <th class="">見積番号</th>
+              <th class="">受注番号</th>
+              <th class="">
+                提出先<br>
+                契約先名/取引先名
+              </th>
+              <th class="">
+                ご使用先名<br>
+                納品先名/最終需要
+              </th>
+              <th class="">件名</th>
+              <th class="">担当者</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  <a href="./002_invoices.html">4023-21-0001-00</a>
+                </td>
+                <td>012345678901-012345678901-001</td>
+                <td>株式会社サンプル</td>
+                <td>(株)サンプル　東京工場</td>
+                <td>(株)サンプル　東京工場</td>
+                <td>ヤマダ　タロウ</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>4023-21-0001-00</td>
+                <td>012345678901-012345678901-001</td>
+                <td>株式会社サンプル</td>
+                <td>(株)サンプル　東京工場</td>
+                <td>(株)サンプル　東京工場</td>
+                <td>ヤマダ　タロウ</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </main>
