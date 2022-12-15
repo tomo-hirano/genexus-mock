@@ -1,0 +1,16 @@
+.panel {
+  position: relative;
+  margin-top: 2rem;
+}
+.panel__title {
+  position: absolute;
+  background: mediumvioletred;
+  top: -25px;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  color: white;
+}
+.panel__container {
+  padding-top: 1rem;
+}
+/*# sourceMappingURL=custom.css.map */

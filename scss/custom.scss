@@ -1,0 +1,17 @@
+.panel {
+  position: relative;
+  margin-top: 2rem;
+
+  &__title {
+    position: absolute;
+    background: mediumvioletred;
+    top: -25px;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    color: white;
+  }
+
+  &__container {
+    padding-top: 1rem;
+  }
+}

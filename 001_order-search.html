@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>受注検索</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/custom.min.css">
 </head>
 <body>
   <header class="p-3 text-white" style="background-color: mediumvioletred;">
@@ -20,7 +21,7 @@
           <li><a href="#" class="nav-link px-2 text-white">見積</a></li>
         </ul>
         <div class="text-end">
-          <button type="button" class="btn btn-outline-light me-2">account</button>
+          <button type="button" class="btn btn-outline-light me-2">ログアウト</button>
         </div>
       </div>
     </div>
@@ -28,14 +29,15 @@
   <main class="" style="background-color: lavenderblush;">
     <h3 class="p-3 bg-white">受注検索</h3>
     <div class="container-fluid">
-      <div class="p-3 bg-white rounded">
-        <div class="container">
+      <div class="p-3 bg-white rounded panel">
+        <div class="panel__title">受注検索</div>
+        <div class="container panel__container">
           <form>
             <div class="row mb-3">
               <div class="row">
                 <div class="col-sm-4">
                   <div class="row">
-                    <label for="deptNo" class="col-sm-2 col-form-label fw-bold" style="width: 10rem;">部門番号</label>
+                    <label for="deptNo" class="col-sm-2 col-form-label fw-bold" style="width: 7.5rem;">部門番号</label>
                     <div class="col-sm-2">
                       <input type="email" class="form-control" id="deptNo" style="width: 8rem;">
                     </div>
@@ -43,7 +45,7 @@
                 </div>
                 <div class="col-sm-8">
                   <div class="row">
-                    <label for="deptName" class="col-sm-2 col-form-label fw-bold" style="width: 10rem;">部門名</label>
+                    <label for="deptName" class="col-sm-2 col-form-label fw-bold" style="width: 7.5rem;">部門名</label>
                     <div class="col-sm-6">
                       <input type="email" class="form-control" id="deptName" style="width: 50%;">
                     </div>
@@ -52,45 +54,45 @@
               </div>
             </div>
             <div class="row mb-3">
-              <label for="quoteNo" class="col-sm-2 col-form-label fw-bold" style="width: 10rem;">見積番号</label>
+              <label for="quoteNo" class="col-sm-2 col-form-label fw-bold" style="width: 7.5rem;">見積番号</label>
               <div class="col-sm-10">
                 <input type="email" class="form-control w-25" id="quoteNo">
               </div>
             </div>
             <div class="row mb-3">
-              <label for="customerNm" class="col-sm-2 col-form-label fw-bold" style="width: 10rem;">取引先名</label>
+              <label for="customerNm" class="col-sm-2 col-form-label fw-bold" style="width: 7.5rem;">取引先名</label>
               <div class="col-sm-10">
                 <input type="email" class="form-control w-50" id="customerNm">
               </div>
             </div>
             <div class="row mb-3">
-              <label for="recipient" class="col-sm-2 col-form-label fw-bold" style="width: 10rem;">納入先</label>
+              <label for="recipient" class="col-sm-2 col-form-label fw-bold" style="width: 7.5rem;">納入先</label>
               <div class="col-sm-10">
                 <input type="email" class="form-control w-50" id="recipient">
               </div>
             </div>
             <div class="row mb-3">
-              <label for="orderAmountFr" class="col-sm-2 col-form-label fw-bold" style="width: 10rem;">受注金額</label>
+              <label for="orderAmountFr" class="col-sm-2 col-form-label fw-bold" style="width: 7.5rem;">受注金額</label>
               <div class="col-sm-10 d-flex align-items-center">
-                <input type="number" class="form-control text-end" id="orderAmountFr" style="width: 15%">&nbsp;～&nbsp;
-                <input type="number" class="form-control text-end" id="orderAmountTo" style="width: 15%">
+                <input type="number" class="form-control text-end w-25" id="orderAmountFr">&nbsp;～&nbsp;
+                <input type="number" class="form-control text-end w-25" id="orderAmountTo">
               </div>
             </div>
             <div class="row mb-3">
-              <label for="profitRatioFr" class="col-sm-2 col-form-label fw-bold" style="width: 10rem;">利益率</label>
+              <label for="profitRatioFr" class="col-sm-2 col-form-label fw-bold" style="width: 7.5rem;">利益率</label>
               <div class="col-sm-10 d-flex align-items-center">
                 <input type="number" class="form-control text-end" id="profitRatioFr" style="width: 15%">&nbsp;%&nbsp;～&nbsp;
                 <input type="number" class="form-control text-end" id="profitRatioTo" style="width: 15%">&nbsp;%
               </div>
             </div>
             <div class="row mb-3">
-              <label for="fiscalYear" class="col-sm-2 col-form-label fw-bold" style="width: 10rem;">年度</label>
+              <label for="fiscalYear" class="col-sm-2 col-form-label fw-bold" style="width: 7.5rem;">年度</label>
               <div class="col-sm-10">
                 <input type="email" class="form-control" id="fiscalYear" style="width: 10%">
               </div>
             </div>
             <div class="row mb-3">
-              <label for="pic" class="col-sm-2 col-form-label fw-bold" style="width: 10rem;">担当者</label>
+              <label for="pic" class="col-sm-2 col-form-label fw-bold" style="width: 7.5rem;">担当者</label>
               <div class="col-sm-10">
                 <input type="email" class="form-control w-50" id="pic">
               </div>
