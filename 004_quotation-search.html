@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>見積照会</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/custom.min.css">
+</head>
+<body>
+  <header class="p-3 text-white" style="background-color: mediumvioletred;">
+    <div class="container-fluid">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 text-white">ホーム</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">見積</a></li>
+        </ul>
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-2">ログアウト</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="" style="background-color: lavenderblush;">
+    <h3 class="p-3 bg-white">見積照会</h3>
+    <div class="container-fluid">
+      <div class="p-3 bg-white rounded panel">
+        <div class="panel__title">見積検索</div>
+        <div class="container panel__container">
+          <form>
+            <div class="row mb-3">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="row">
+                    <label for="deptNo" class="col-sm-2 col-form-label fw-bold" style="width: 7.5rem;">部門番号</label>
+                    <div class="col-sm-2">
+                      <input type="email" class="form-control" id="deptNo" style="width: 8rem;">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-8">
+                  <div class="row">
+                    <label for="deptName" class="col-sm-2 col-form-label fw-bold" style="width: 7.5rem;">部門名</label>
+                    <div class="col-sm-6">
+                      <input type="email" class="form-control" id="deptName" style="width: 50%;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="quoteNo" class="col-sm-2 col-form-label fw-bold" style="width: 7.5rem;">見積番号</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control w-25" id="quoteNo">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="customerNm" class="col-sm-2 col-form-label fw-bold" style="width: 7.5rem;">取引先名</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control w-50" id="customerNm">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="recipient" class="col-sm-2 col-form-label fw-bold" style="width: 7.5rem;">納入先</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control w-50" id="recipient">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="orderAmountFr" class="col-sm-2 col-form-label fw-bold" style="width: 7.5rem;">見積金額</label>
+              <div class="col-sm-10 d-flex align-items-center">
+                <input type="number" class="form-control text-end" id="orderAmountFr" style="width: 15%">
+                <div class="btn-group ms-5">
+                  <input type="radio" class="btn-check" name="upwards-below1" id="upwards1" autocomplete="on">
+                  <label for="upwards1" class="btn btn-outline-secondary">以上</label>
+                  <input type="radio" class="btn-check" name="upwards-below1" id="below1" autocomplete="off">
+                  <label for="below1" class="btn btn-outline-secondary">以下</label>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="profitRatioFr" class="col-sm-2 col-form-label fw-bold" style="width: 7.5rem;">利益率%</label>
+              <div class="col-sm-10 d-flex align-items-center">
+                <input type="number" class="form-control text-end" id="profitRatioFr" style="width: 15%">&nbsp;%
+                <div class="btn-group ms-5">
+                  <input type="radio" class="btn-check" name="upwards-below2" id="upwards2" autocomplete="on">
+                  <label for="upwards2" class="btn btn-outline-secondary">以上</label>
+                  <input type="radio" class="btn-check" name="upwards-below2" id="below2" autocomplete="off">
+                  <label for="below2" class="btn btn-outline-secondary">以下</label>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="profitRatioFr" class="col-sm-2 col-form-label fw-bold" style="width: 7.5rem;">受注有無</label>
+              <div class="col-sm-10 d-flex align-items-center">
+                <div class="btn-group">
+                  <input type="radio" class="btn-check" name="existsOrder" id="existsOrder1" autocomplete="on">
+                  <label for="existsOrder1" class="btn btn-outline-secondary">指定なし</label>
+                  <input type="radio" class="btn-check" name="existsOrder" id="existsOrder2" autocomplete="off">
+                  <label for="existsOrder2" class="btn btn-outline-secondary">有</label>
+                  <input type="radio" class="btn-check" name="existsOrder" id="existsOrder3" autocomplete="off">
+                  <label for="existsOrder3" class="btn btn-outline-secondary">無</label>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="fiscalYear" class="col-sm-2 col-form-label fw-bold" style="width: 7.5rem;">年度</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="fiscalYear" style="width: 10%">
+              </div>
+            </div>
+            <button class="btn btn-large text-white" style="background-color: mediumvioletred;">検索</button>
+          </form>
+          <hr class="my-4">
+          <div class="table-responsive">
+            <table class="table border-top border-start border-end text-nowrap">
+              <thead class="table-light">
+                <th class="">&nbsp;</th>
+                <th class="">見積番号</th>
+                <th class="">取引先名(確認)</th>
+                <th class="">
+                  第2取引先名<br>
+                  記入
+                </th>
+                <th class="">納入先名選択</th>
+                <th class="">
+                  見積書記載<br>
+                  納入先記入
+                </th>
+                <th class="">件名</th>
+                <th class="">見積作成日</th>
+                <th class="">見積作成者</th>
+                <th class="">承認者</th>
+                <th class="">見積金額</th>
+                <th class="">計画原価</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="icon d-flex fs-4">
+                      <i class="bi bi-pencil-square m-1"></i>
+                      <i class="bi bi-x-square m-1"></i>
+                    </div>
+                  </td>
+                  <td><a href="./005_quotation-ledger-inquiry.html">4023-22-224-1</a></td>
+                  <td>株式会社サンプル</td>
+                  <td>&nbsp;</td>
+                  <td>(株)サンプル　東京工場</td>
+                  <td>貴社　東京工場　殿</td>
+                  <td>圧縮機分解点検</td>
+                  <td>2022/10/28</td>
+                  <td>中島</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"></body>
+</html>
